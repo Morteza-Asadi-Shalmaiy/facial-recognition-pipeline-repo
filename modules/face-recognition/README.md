@@ -44,3 +44,19 @@ To make this presentation-ready for interviews, consider adding once available:
 
 ---
 *This is module 1 of 4 in the full pipeline. Update this document as the liveness, super-resolution, and Re-ID modules are finalized.*
+
+---
+
+## Results
+
+### Before / After
+
+| Before | After |
+|--------|-------|
+| ![Before](https://raw.githubusercontent.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline-repo/main/assets/test/test-image-04.jpg) | ![After](https://raw.githubusercontent.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline-repo/main/assets/results/test-image-04.jpg) |
+
+### Demo Video
+
+| Before | After |
+|--------|-------|
+| ![Demo](https://raw.githubusercontent.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline-repo/refs/heads/main/assets/video-test-01%20(1).gif) | ![Demo](https://raw.githubusercontent.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline-repo/refs/heads/main/assets/video-test-01.gif) |
