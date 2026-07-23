@@ -2,7 +2,7 @@
 
 A computer vision system combining facial recognition, liveness/anti-spoofing detection, super-resolution, and person re-identification (Re-ID) — designed to run **entirely locally on Google Colab, with no external API dependencies.**
 
-Built as a school/portfolio project to demonstrate an end-to-end identity-verification pipeline suitable for realistic CCTV-style scenarios.
+Built as a portfolio project to demonstrate an end-to-end identity-verification pipeline suitable for realistic CCTV-style scenarios.
 
 ## Pipeline Architecture
 
@@ -30,9 +30,9 @@ Final identity decision + case file / tracking output
 | Module | Status | Description |
 |---|---|---|
 | [`face-recognition`](./modules/face-recognition) | ✅ Complete | Identity matching via InsightFace `buffalo_l` + cosine similarity |
-| [`liveness-anti-spoofing`](./modules/liveness-anti-spoofing) | 🚧 In progress | MiniFASNet ensemble + blink-based temporal liveness |
-| [`super-resolution`](./modules/super-resolution) | 🚧 In progress | CodeFormer/GFPGAN/Real-ESRGAN preprocessing for low-res faces |
-| [`person-reid`](./modules/person-reid) | 🚧 In progress | OSNet + YOLOv8 Re-ID fallback for unresolved identities |
+| [`liveness-anti-spoofing`](./modules/liveness-anti-spoofing) | 🚧 In progress | - |
+| [`super-resolution`](./modules/super-resolution) | 🚧 In progress | - |
+| [`person-reid`](./modules/person-reid) | 🚧 In progress | - |
 
 Each module folder contains its own README with technical details, challenges solved, and results.
 
