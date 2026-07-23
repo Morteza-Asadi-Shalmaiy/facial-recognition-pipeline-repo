@@ -10,13 +10,13 @@ Built as a portfolio project to demonstrate an end-to-end identity-verification 
 
 | Before | After |
 |--------|-------|
-| ![Before](https://raw.githubusercontent.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline-repo/main/assets/test/test-image-04.jpg) | ![After](https://raw.githubusercontent.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline-repo/main/assets/results/test-image-04.jpg) |
+| ![Before](https://raw.githubusercontent.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline/main/assets/test/test-image-04.jpg) | ![After](https://raw.githubusercontent.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline/main/assets/results/test-image-04.jpg) |
 
 ### Demo Video
 
 | Before | After |
 |--------|-------|
-| ![Demo](https://raw.githubusercontent.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline-repo/refs/heads/main/assets/video-test-01%20(1).gif) | ![Demo](https://raw.githubusercontent.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline-repo/refs/heads/main/assets/video-test-01.gif) |
+| ![Demo](https://raw.githubusercontent.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline/refs/heads/main/assets/video-test-01%20(1).gif) | ![Demo](https://raw.githubusercontent.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline/refs/heads/main/assets/video-test-01.gif) |
 
 ## Pipeline Architecture
 
