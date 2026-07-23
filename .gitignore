@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Environments
+.env
+venv/
+.venv/
+
+# Model weights (large files - use Git LFS or external hosting instead)
+*.pth
+*.onnx
+*.pt
+weights/
+
+# Data / media
+faces/
+*.mp4
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.png
+!assets/**/*.png
+!assets/**/*.jpg
+!assets/**/*.gif
+
+# OS
+.DS_Store
+Thumbs.db
