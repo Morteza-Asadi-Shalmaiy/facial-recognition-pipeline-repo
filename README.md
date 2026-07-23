@@ -1,1 +1,65 @@
-# facial-recognition-pipeline-repo
+# Local Multi-Module Facial Recognition & Person Identification Pipeline
+
+A computer vision system combining facial recognition, liveness/anti-spoofing detection, super-resolution, and person re-identification (Re-ID) — designed to run **entirely locally on Google Colab, with no external API dependencies.**
+
+Built as a school/portfolio project to demonstrate an end-to-end identity-verification pipeline suitable for realistic CCTV-style scenarios.
+
+## Pipeline Architecture
+
+```
+Input (image/video)
+      |
+      v
+[1] Spoof Check (Liveness / Anti-Spoofing)
+      |  (reject if spoof detected)
+      v
+[2] Face Recognition (InsightFace buffalo_l)
+      |  (if match confidence too low)
+      v
+[3] Super-Resolution Fallback (CodeFormer / GFPGAN / Real-ESRGAN)
+      |  (re-attempt recognition on restored face)
+      v
+[4] Person Re-ID Fallback (OSNet + YOLOv8)
+      |  (if face still unresolved, match by full-body appearance)
+      v
+Final identity decision + case file / tracking output
+```
+
+## Modules
+
+| Module | Status | Description |
+|---|---|---|
+| [`face-recognition`](./modules/face-recognition) | ✅ Complete | Identity matching via InsightFace `buffalo_l` + cosine similarity |
+| [`liveness-anti-spoofing`](./modules/liveness-anti-spoofing) | 🚧 In progress | MiniFASNet ensemble + blink-based temporal liveness |
+| [`super-resolution`](./modules/super-resolution) | 🚧 In progress | CodeFormer/GFPGAN/Real-ESRGAN preprocessing for low-res faces |
+| [`person-reid`](./modules/person-reid) | 🚧 In progress | OSNet + YOLOv8 Re-ID fallback for unresolved identities |
+
+Each module folder contains its own README with technical details, challenges solved, and results.
+
+## Key Design Constraints
+
+- **Fully local execution** — no cloud recognition APIs (e.g., AWS Rekognition, Azure Face); all models run on local/Colab GPU resources
+- **Fallback-based architecture** — each stage only activates if the previous stage can't confidently resolve an identity, balancing speed and robustness
+- **Realistic CCTV conditions in mind** — low resolution, distant/angled faces, and potential presentation attacks all factored into module selection
+
+## Tech Stack
+
+`InsightFace` · `ONNX Runtime` · `OpenCV` · `MiniFASNet` · `MediaPipe` · `CodeFormer` · `GFPGAN` · `Real-ESRGAN` · `TorchReID (OSNet)` · `YOLOv8` · `NumPy` · `Google Colab (GPU runtime)`
+
+## Repository Structure
+
+```
+.
+├── README.md                          # This file
+├── modules/
+│   ├── face-recognition/
+│   ├── liveness-anti-spoofing/
+│   ├── super-resolution/
+│   └── person-reid/
+├── docs/                              # Architecture diagrams, presentation notes
+└── assets/                            # Demo images/GIFs/screenshots
+```
+
+## Status
+
+Actively in development. Modules are being finalized and documented individually before being wired into the full end-to-end pipeline.
