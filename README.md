@@ -15,8 +15,6 @@ entirely on local/Colab GPU resources with no cloud recognition APIs (no AWS Rek
 no Azure Face), and designed from the ground up around realistic surveillance conditions:
 low resolution, distant or angled faces, and presentation attacks.
 
-Built as a portfolio project to demonstrate an end-to-end identity-verification pipeline suitable for realistic CCTV-style scenarios.
-
 ## Results for [First Module](https://github.com/Morteza-Asadi-Shalmaiy/facial-recognition-pipeline-repo/tree/main/modules/face-recognition) the base of our FR
 
 ### Before / After
