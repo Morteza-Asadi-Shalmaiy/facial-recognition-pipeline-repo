@@ -1,6 +1,19 @@
-# Local Multi-Module Facial Recognition & Person Identification Pipeline
+# facial-recognition-pipeline 🕵️
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX-Runtime-005CED?logo=onnx&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Colab](https://img.shields.io/badge/Run%20in-Colab-F9AB00?logo=googlecolab&logoColor=white)
 
-A computer vision system combining facial recognition, liveness/anti-spoofing detection, super-resolution, and person re-identification (Re-ID) — designed to run **entirely locally on Google Colab, with no external API dependencies.**
+> **Results at a glance:** 4-stage fallback pipeline — spoof check → face recognition →
+> super-resolution retry → person Re-ID · Zero external APIs, fully local Colab GPU
+> execution · Designed around realistic CCTV conditions (low-res, angled, distant faces)
+
+A **local, multi-module identity-verification pipeline** combining facial recognition,
+liveness/anti-spoofing detection, super-resolution, and person re-identification — each
+stage only activating if the one before it can't confidently resolve an identity. Built
+entirely on local/Colab GPU resources with no cloud recognition APIs (no AWS Rekognition,
+no Azure Face), and designed from the ground up around realistic surveillance conditions:
+low resolution, distant or angled faces, and presentation attacks.
 
 Built as a portfolio project to demonstrate an end-to-end identity-verification pipeline suitable for realistic CCTV-style scenarios.
 
